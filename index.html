@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #container3D {
+    position: fixed;
+    inset: 0;
+    /* background-color: red; */
+    z-index: 100;
+    pointer-events: none;
+  }
+
+  .section {
+    background-image: radial-gradient(#33371F, #1B1B1B);
+    height: 100vh;
+  }
+</style>
+
+<body>
+  <div class="section" id="banner"></div>
+  <div class="section" id="intro"></div>
+  <div class="section" id="description"></div>
+  <div class="section" id="contact"></div>
+
+</body>
+
+<div id="container3D"></div>
+
+<script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@latest/examples/jsm/"
+      }
+    }
+</script>
+<script type="module" src="./three.js"></script>
+
+</html>
